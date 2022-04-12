@@ -1,6 +1,6 @@
 import './App.css';
 import { Component } from 'react'
-//import Clock from './components/Clock'
+import Clock from './components/Clock'
 
 class App extends Component {
   constructor(props) {
@@ -9,12 +9,15 @@ class App extends Component {
   }
 
 
-  
+
 
   render() {
     return (
-      <h1>Hello, {this.state.username}!</h1>
-
+      <div>
+        <h1>Hello, {this.state.username}!</h1>
+        <Clock />
+      </div>
+      
     )
   }
 }
