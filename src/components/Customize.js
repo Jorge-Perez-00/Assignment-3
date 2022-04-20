@@ -1,4 +1,6 @@
+import '../css/Customize.css';
 import { Component } from 'react'
+
 
 
 
@@ -48,7 +50,7 @@ class Customize extends Component {
 
         if(isbuttonClicked){
             element = (
-                <div>
+                <div class='form'>
                     
                     <form onSubmit={this.handleSubmit}>
                         <label>
@@ -68,13 +70,13 @@ class Customize extends Component {
                 </div>)
         }
         else{
-            element = <button onClick={this.handleClick}>Customize Profile</button>
+            element = <button class = "customize-button" onClick={this.handleClick}>Customize Profile</button>
         }
 
         
 
         return (
-            <div>
+            <div class='customize'>
                 {element}
             </div>
         )

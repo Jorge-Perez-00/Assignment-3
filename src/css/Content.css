@@ -1,0 +1,38 @@
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+
+.data-buttons {
+    display: inline-block;
+    border-radius: 10px;
+    margin: 30px;
+    font-size: 50px;
+    background-color: #192841;
+    color: #f2f2f2;
+}
+
+.data {
+    text-align: center;
+}
+
+table {
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+.type {
+    font-size: 65px;
+}

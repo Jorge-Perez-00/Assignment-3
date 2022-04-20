@@ -1,13 +1,19 @@
-.App {
-  text-align: center;
+.message {
+  font-size: 70px;
+  margin-left: 40px;
 }
 
-.content{
-  width: 100%;
-  text-align: center;
+.header {
+  display: flex;
+  padding-right: 10px;
 }
 
-.info{
-  display: inline-block;
-  margin: 10px;
+.greeting {
+    
+  
 }
+
+button:hover {
+  color: aqua;
+}
+

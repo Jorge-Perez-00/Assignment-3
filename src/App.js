@@ -10,8 +10,8 @@ class App extends Component {
     super(props);
     this.state = { 
       username: "Guest",
-      backgroundColor: "",
-      textColor: ""
+      backgroundColor: "#18191a",
+      textColor: "#e3e6eb"
     };
 
   }
@@ -39,9 +39,11 @@ class App extends Component {
 
     return (
       <div style={{color: tColor}}>
-        <div>
-          <h1>Hello, {username}!</h1>
-          <Clock />
+        <div class='header'>
+          <div class = 'greeting'>
+            <h1 class='message'>Hello, {username}!</h1>
+            <Clock />
+          </div>
           <Customize username = {this.state.username} backgroundColor = {this.state.backgroundColor} textColor = {this.state.textColor} update={this.updateProfile} />
         </div>
         <Content/>

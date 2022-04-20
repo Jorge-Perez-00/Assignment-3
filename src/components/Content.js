@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import axios from 'axios';
+import '../css/Content.css';
 
 
 
@@ -86,8 +87,8 @@ class Content extends Component {
 
         if(debits){
             data = (
-                <div>
-                    <h1>DEBITS</h1>,
+                <div class="data">
+                    <h1 class='type'>DEBITS</h1>,
                     <table>
                         <tr>
                             <th>Date</th>
@@ -102,8 +103,8 @@ class Content extends Component {
         }
         else if(credits){
             data = (
-                <div>
-                    <h1>CREDITS</h1>,
+                <div class="data">
+                    <h1 class="type">CREDITS</h1>,
                     <table>
                         <tr>
                             <th>Date</th>
@@ -119,8 +120,8 @@ class Content extends Component {
         return(
             <div>
                 <div class="content">
-                <button class="info" onClick={this.debitsClicked}>Debits</button>
-                <button class="info" onClick={this.creditsClicked}>Credits</button>
+                <button class="data-buttons" onClick={this.debitsClicked}>Debits</button>
+                <button class="data-buttons" onClick={this.creditsClicked}>Credits</button>
                 </div>
                 {data}
             </div>
