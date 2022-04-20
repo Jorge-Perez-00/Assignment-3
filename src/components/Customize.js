@@ -6,9 +6,9 @@ class Customize extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: "",
-            backgroundColor: "",
-            textColor: "",
+            name: this.props.username,
+            backgroundColor: this.props.backgroundColor,
+            textColor: this.props.textColor,
             buttonPressed: false
         }
 

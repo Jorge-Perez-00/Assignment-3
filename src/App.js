@@ -3,6 +3,7 @@ import { Component } from 'react'
 //import { Helmet } from 'react-helmet';
 import Clock from './components/Clock'
 import Customize from './components/Customize'
+import Content from './components/Content';
 
 class App extends Component {
   constructor(props) {
@@ -38,10 +39,12 @@ class App extends Component {
 
     return (
       <div style={{color: tColor}}>
-        <h1>Hello, {username}!</h1>
-
-        <Clock />
-        <Customize update={this.updateProfile} />
+        <div>
+          <h1>Hello, {username}!</h1>
+          <Clock />
+          <Customize username = {this.state.username} backgroundColor = {this.state.backgroundColor} textColor = {this.state.textColor} update={this.updateProfile} />
+        </div>
+        <Content/>
 
       </div>
       
